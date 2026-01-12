@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const getInfo = () => {
     const serviceInput = document.getElementById("service");
-    const desInput = document.getElementsByName("des")[0];
+    const desInput = document.getElementById("des");
     const durInput = document.getElementById("dur");
     const priceInput = document.getElementById("price");
     const imgInput = document.getElementById("img");

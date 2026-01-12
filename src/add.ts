@@ -8,7 +8,7 @@ interface IService {
 }
 const getInfo = (): void => {
     const serviceInput = document.getElementById("service") as HTMLInputElement;
-    const desInput = document.getElementsByName("des")[0] as HTMLTextAreaElement;
+    const desInput = document.getElementById("des") as HTMLTextAreaElement;
     const durInput = document.getElementById("dur") as HTMLInputElement;
     const priceInput = document.getElementById("price") as HTMLInputElement;
     const imgInput = document.getElementById("img") as HTMLInputElement;
