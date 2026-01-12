@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Add New Service</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: rgb(185, 147, 75) !important;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="font-weight: bold; font-family: cursive;">Hello Glow
+                Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="disp.html"
+                            style=" font-size: 19px;">Display
+                            All Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="add.html" style="font-size: 19px;">Add New Services</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <center>
+        <h1 class="mt-5" style=" font-family:cursive; color:  rgb(185, 147, 75); font-weight: bold;">Add New Services</h1>
+    </center>
+    <div class="container mt-5">
+        <form method="post" name="myForm" id="myForm">
+            <input type="text" name="service" id="service" placeholder="Enter New Service" class="form-control mt-4">
+            <span class="error" id="serviceErr"></span>
+            <textarea class="form-control mt-4" name="des" placeholder="Enter Description"></textarea>
+            <span class="error" id="desErr"></span>
+            <input type="text" name="dur" id="dur" placeholder="Enter Duration" class="form-control mt-4">
+            <span class="error" id="durErr"></span>
+            <input type="number" name="price" id="price" placeholder="Enter Price" class="form-control mt-4">
+            <span class="error" id="priceErr"></span>
+            <input type="file" name="img" id="img" class="form-control mt-4">
+            <button type="button" style="background-color: rgb(185, 147, 75) !important;" class="form-control mt-4" onclick="getInfo()">ADD</button>
+        </form>
+        <script src="build/add.js" defer></script>
+        <script> var exports = {}; </script>
+        <div id="message"></div>
+    </div>
+</body>
+
+</html>
