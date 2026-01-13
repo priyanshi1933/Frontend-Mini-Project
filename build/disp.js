@@ -28,5 +28,8 @@ const deleteService = (id) => {
         displayServices();
     }
 };
+const editService = (id) => {
+    window.location.href = `edit.html?id=${id}`;
+};
 window.onload = displayServices;
 //# sourceMappingURL=disp.js.map

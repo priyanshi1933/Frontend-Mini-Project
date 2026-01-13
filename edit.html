@@ -5,16 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Add New Service</title>
-    <style>
-        .error{
-            font-size: 17px;
-            color: red;
-        }
-    </style>
+    <title>Edit Service</title>
 </head>
 
-<body style="background-color: rgb(245, 237, 220);">
+<body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: rgb(185, 147, 75) !important;">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html" style="font-weight: bold; font-family: cursive;">Hello Glow
@@ -44,22 +38,21 @@
         </div>
     </nav>
     <center>
-        <h1 class="mt-5" style=" font-family:cursive; color:  rgb(185, 147, 75); font-weight: bold;">Add New Services</h1>
+        <h1 class="mt-5" style=" font-family:cursive; color:  rgb(185, 147, 75); font-weight: bold;">Edit Services</h1>
     </center>
     <div class="container mt-5">
         <form method="post" name="myForm" id="myForm">
             <input type="text" name="service" id="service" placeholder="Enter New Service" class="form-control mt-4">
-            <span class="error" id="serviceErr"></span>
             <textarea class="form-control mt-4" name="des" id="des" placeholder="Enter Description"></textarea>
-            <span class="error" id="desErr"></span>
             <input type="text" name="dur" id="dur" placeholder="Enter Duration" class="form-control mt-4">
-            <span class="error" id="durErr"></span>
             <input type="number" name="price" id="price" placeholder="Enter Price" class="form-control mt-4">
-            <span class="error" id="priceErr"></span>
             <input type="file" name="img" id="img" class="form-control mt-4">
-            <button type="button" style="background-color: rgb(185, 147, 75) !important;" class="form-control mt-4" onclick="getInfo()">ADD</button>
+            <button type="button" style="background-color: rgb(185, 147, 75) !important;"
+                class="btn btn-dark form-control mt-4" onclick="updateService()">
+                UPDATE SERVICE
+            </button>
         </form>
-        <script src="build/add.js" defer></script>
+        <script src="build/edit.js" defer></script>
         <script> var exports = {}; </script>
     </div>
 </body>

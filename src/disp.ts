@@ -37,4 +37,8 @@ const deleteService = (id: number): void => {
 
 }
 
+const editService=(id:number):void=>{
+    window.location.href=`edit.html?id=${id}`;
+}
+
 window.onload = displayServices;
